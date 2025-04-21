@@ -1,7 +1,18 @@
 function responderSim() {
-    // Exibe a mensagem "Mentirosa!!" ao clicar em "Sim"
-    document.getElementById("mensagem").style.display = "block";
+    const imagem = document.getElementById("imgg");
+    const mensagem = document.getElementById("mensagem");
+
+    const visivel = imagem.style.display === "block";
+
+    if (visivel) {
+        imagem.style.display = "none";
+        mensagem.style.display = "none";
+    } else {
+        imagem.style.display = "block";
+        mensagem.style.display = "block";
+    }
 }
+
 
 function moverBotao() {
     let botao = document.getElementById("nao");
