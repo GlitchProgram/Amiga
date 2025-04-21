@@ -5,7 +5,7 @@ function responderSim() {
 
 function moverBotao() {
     let botao = document.getElementById("nao");
-    let larguraTela = window.innerWidth - 120; // Para garantir que o botão não ultrapasse a tela
+    let larguraTela = window.innerWidth - 100; // Para garantir que o botão não ultrapasse a tela
     let alturaTela = window.innerHeight - 50; // Para garantir que o botão não ultrapasse a tela
 
     let novaPosicaoX = Math.random() * larguraTela; // Gera uma nova posição X aleatória
